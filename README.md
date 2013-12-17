@@ -1,5 +1,7 @@
 Dockerfiles!
 
+to build: type "make"
+
 centos-epel
  - add EPEL to centos base
  - update installed packages
