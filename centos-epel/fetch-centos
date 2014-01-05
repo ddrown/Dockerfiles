@@ -1,0 +1,5 @@
+#!/bin/sh
+
+if [ `docker images -q centos | wc -l` = 0 ]; then
+  docker pull centos
+fi
