@@ -1,0 +1,11 @@
+#!/bin/sh
+
+IMAGE=$1
+
+IMAGES=`docker images | egrep "^(<none>|$IMAGE)" | awk '{print $3}'`
+if [ -n "$IMAGES" ]; then
+  echo $IMAGES
+  docker rmi $IMAGES
+else
+  echo no images to clean
+fi
