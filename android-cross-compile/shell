@@ -1,3 +1,4 @@
 #!/bin/sh
 
+echo reminder: this VM will reset on exit, no files or changes are saved
 docker run -t -i -rm android-cross-compile /home/admin/shell
