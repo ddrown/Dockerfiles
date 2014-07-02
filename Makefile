@@ -1,2 +1,2 @@
 run:
-	docker build -t=android-cross-compile .
+	docker build --no-cache -t=android-cross-compile .
